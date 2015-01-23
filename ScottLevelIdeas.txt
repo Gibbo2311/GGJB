@@ -1,0 +1,16 @@
+Level starts illuminated but the flashlight darkens it.
+Not even have a maze?
+Level becomes a 2d platformer 
+The character and the flashlight move independently.
+Gravity change
+Triggers control flow of time of obstacles in the world.
+Swap controls.
+Alternate LT/RT to move the character around.
+Flashlight causes the world to drop around them.
+Light breaks down walls from afar but the closer you get it rebuilds
+Light and movement are linked and only when the thumbsticks are combined.
+
+1 - Introductory level.
+2 - only move with alternate trigger
+3 - Flashlight off when moving.
+
