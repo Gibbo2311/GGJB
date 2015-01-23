@@ -10,9 +10,9 @@ public class AgentPlayer1 : Agent {
 	
 	// Update is called once per frame
 	public override void Update () {
-		this.move = new Vector3(Input.GetAxis("Horizontal"),
+		this.move = new Vector3(Input.GetAxis("Player1Horizontal"),
 		                        0f, 
-		                        Input.GetAxis ("Vertical"));
+		                        Input.GetAxis ("Player1Vertical"));
 		
 		this.move.Normalize();
 		

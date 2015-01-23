@@ -12,12 +12,18 @@ public class AgentPlayer2 : Agent {
 	// Update is called once per frame
 	public override void Update () {
 
-		this.move = new Vector3(Input.GetAxis("Horizontal"),
+		this.move = new Vector3(Input.GetAxis("Player1Horizontal"),
 		                        0f, 
-		                        Input.GetAxis ("Vertical"));
+		                        Input.GetAxis ("Player1Vertical"));
 		
 		this.move.Normalize();
 
-		base.Update();
+		this.look = new Vector3(Input.GetAxis ("Player2Horizontal"),
+		                        0f,
+		                        Input.GetAxis ("Player2Vertical"));
+
+		this.transform.LookAt(this.transform.position + look);
+
+		//base.Update();
 	}
 }
