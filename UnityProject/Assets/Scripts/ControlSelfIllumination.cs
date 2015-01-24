@@ -7,7 +7,7 @@ public class ControlSelfIllumination : MonoBehaviour {
 
 	public bool override_color = false;
 
-	protected float color_multiplier = 0.5f;
+	protected float color_multiplier = 0.0f;
 
 	public float illumination_rate = 0.6f;
 
