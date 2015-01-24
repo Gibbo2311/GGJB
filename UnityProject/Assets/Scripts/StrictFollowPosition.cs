@@ -11,9 +11,6 @@ public class StrictFollowPosition : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-
-		transform.position = toFollow.transform.position;
 		transform.position = toFollow.transform.position;
 	}
 }
