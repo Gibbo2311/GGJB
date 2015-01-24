@@ -6,9 +6,9 @@ public class FloorGenerator : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		for(int i = -5; i < 5; i++)
+		for(int i = -50; i < 50; i++)
 		{
-			for( int k = -5; k < 5; k++)
+			for( int k = -25; k < 25; k++)
 			{
 				GameObject go = (GameObject)Instantiate(Resources.Load("FloorPanel"));
 
