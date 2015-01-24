@@ -22,3 +22,5 @@ UnityProject.userprefs
 UnityProject.sln
 Assembly-CSharp-vs.csproj
 Assembly-CSharp.csproj
+UnityProject/Assembly-UnityScript-vs.unityproj
+UnityProject/Assembly-UnityScript.unityproj
