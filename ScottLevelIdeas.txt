@@ -14,3 +14,7 @@ Light and movement are linked and only when the thumbsticks are combined.
 2 - only move with alternate trigger
 3 - Flashlight off when moving.
 
+
+Rate of decrease
+Wall around
++.5 for world gen

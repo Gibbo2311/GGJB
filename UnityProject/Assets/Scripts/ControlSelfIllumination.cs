@@ -9,7 +9,9 @@ public class ControlSelfIllumination : MonoBehaviour {
 
 	protected float color_multiplier = 0.5f;
 
-	public float illumination_rate = 0.4f;
+	public float illumination_rate = 0.6f;
+
+	public float illumination_decrease_rate = 0.2f;
 	// Use this for initialization
 	void Start () {
 		if(!override_color)
@@ -21,7 +23,7 @@ public class ControlSelfIllumination : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		this.color_multiplier -= Time.deltaTime * (this.illumination_rate / 2);
+		this.color_multiplier -= Time.deltaTime * this.illumination_decrease_rate;
 		this.color_multiplier = Mathf.Clamp(this.color_multiplier, 0.0f, 1.0f);
 		this.gameObject.renderer.material.color = this.main_color * this.color_multiplier;
 	}
