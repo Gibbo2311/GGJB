@@ -3,14 +3,19 @@ using System.Collections;
 
 public class ControlSelfIllumination : MonoBehaviour {
 
-	protected Color main_color = new Color(1f, 1f, 0f);
+	public Color main_color;
+
+	public bool override_color = false;
 
 	protected float color_multiplier = 0.5f;
 
 	public float illumination_rate = 0.4f;
 	// Use this for initialization
 	void Start () {
-	
+		if(!override_color)
+		{
+			this.main_color = this.gameObject.renderer.material.color;
+		}
 	}
 	
 	// Update is called once per frame
