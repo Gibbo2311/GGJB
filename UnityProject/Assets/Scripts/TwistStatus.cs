@@ -8,8 +8,10 @@ public class TwistStatus : MonoBehaviour {
 	private static int SWITCHED_CONTROLS = 2;
 	private static int BUTTON_NEEDED = 3;
 	private static int BUTTON_NEEDED_SWITCHED = 4;
+	private static int SEPARATED = 5;
+	private static int FALLING = 6;
 
-	public bool[] _twists = new bool[5];
+	public bool[] _twists = new bool[7];
 
 	public int _maxParallelTwists = 3;
 	public int _actualParallelTwists = 0;
@@ -31,7 +33,13 @@ public class TwistStatus : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		TimeBasedTwist ();	
+	}
+
+	public bool twistJustHappened()
+	{
+		return _lastTwistsChange == 0;
 	}
 
 	void TimeBasedTwist ()
@@ -53,6 +61,7 @@ public class TwistStatus : MonoBehaviour {
 		if (_lastTwistsChange > _twistInterval) {
 			switchOnTwists ();
 			_lastTwistsChange = 0f;
+
 		}
 	}
 
@@ -136,4 +145,24 @@ public class TwistStatus : MonoBehaviour {
 	public void SetCharMoving(bool b) {
 		_charMoving = b;
 	}
+
+	public bool IsSeparated(){
+		return _twists[SEPARATED];
+	}
+	
+	public void SetSeparated(bool b){
+		_twists[SEPARATED] = b;
+	}
+	
+	public bool IsFalling(){
+		return _twists[FALLING];
+	}
+	
+	public void SetFalling(bool b){
+		_twists[FALLING] = b;
+	}
+	
+
+
+
 }

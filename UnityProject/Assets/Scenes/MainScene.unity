@@ -2553,7 +2553,7 @@ Transform:
   m_GameObject: {fileID: 159196040}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.00198936, y: -.501151085, z: 2.90036774}
-  m_LocalScale: {x: 10, y: 1, z: 10}
+  m_LocalScale: {x: 30, y: 1, z: 30}
   m_Children: []
   m_Father: {fileID: 243806414}
   m_RootOrder: 1
@@ -5846,7 +5846,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _toFollow: {fileID: 725992831}
-  _height: 15
+  _speed: 10
+  _startHeight: 100
+  _targetHeight: 15
 --- !u!81 &342184213
 AudioListener:
   m_ObjectHideFlags: 0
@@ -5897,7 +5899,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 2
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_HDR: 0
@@ -8943,7 +8945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6128fe4ceae9cc418d0eb3680c100f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _twists: 0000000000
+  _twists: 00000000000000
   _maxParallelTwists: 3
   _actualParallelTwists: 0
   _timeBasedTwist: 1
@@ -9703,7 +9705,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 498570, guid: f561136e079f87b49898154c1ea3a905, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.20000005
+      value: -1.04999995
       objectReference: {fileID: 0}
     - target: {fileID: 498570, guid: f561136e079f87b49898154c1ea3a905, type: 2}
       propertyPath: m_LocalPosition.z
@@ -10548,8 +10550,8 @@ Transform:
   m_PrefabInternal: {fileID: 673142080}
   m_GameObject: {fileID: 725992826}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -10.4799995, y: -1.20000005, z: 5.96999979}
-  m_LocalScale: {x: .600000024, y: 1.39999998, z: .600000024}
+  m_LocalPosition: {x: -10.4799995, y: -1.04999995, z: 5.96999979}
+  m_LocalScale: {x: .600000024, y: .600000024, z: .600000024}
   m_Children: []
   m_Father: {fileID: 964255756}
   m_RootOrder: 0
@@ -20749,7 +20751,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4294967291
   m_Lightmapping: 1
   m_ShadowSamples: 1
   m_ShadowRadius: 0
@@ -26474,6 +26476,10 @@ Prefab:
       propertyPath: _height
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 2051014, guid: e19423215595e4e46947270be3c24556, type: 2}
+      propertyPath: m_RenderingPath
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e19423215595e4e46947270be3c24556, type: 2}
   m_RootGameObject: {fileID: 342184211}
@@ -30802,6 +30808,10 @@ Prefab:
     - target: {fileID: 114686, guid: d6e889edfb025704383f78c7c8d25e60, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 10863378, guid: d6e889edfb025704383f78c7c8d25e60, type: 2}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4294967291
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6e889edfb025704383f78c7c8d25e60, type: 2}

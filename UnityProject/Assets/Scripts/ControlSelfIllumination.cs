@@ -12,17 +12,37 @@ public class ControlSelfIllumination : MonoBehaviour {
 	public float illumination_rate = 0.6f;
 
 	public float illumination_decrease_rate = 0.2f;
+
+	private GameObject twistStatusObject;
+
 	// Use this for initialization
 	void Start () {
+
+		twistStatusObject = GameObject.FindGameObjectWithTag ("TwistStatus");
+
 		if(!override_color)
 		{
 			this.main_color = this.gameObject.renderer.material.color;
 		}
 	}
-	
+
+	private TwistStatus getTwistStatus(){
+		return twistStatusObject.GetComponent<TwistStatus> ();
+	}
+
 	// Update is called once per frame
 	void Update () {
 
+		if(getTwistStatus().twistJustHappened())
+	    {
+			var flash_of_light = Random.Range(0.4F, 0.9F);
+
+			if(flash_of_light > color_multiplier)
+			{
+				this.color_multiplier = flash_of_light;
+			}
+		}
+	
 		this.color_multiplier -= Time.deltaTime * this.illumination_decrease_rate;
 		this.color_multiplier = Mathf.Clamp(this.color_multiplier, 0.0f, 1.0f);
 		this.gameObject.renderer.material.color = this.main_color * this.color_multiplier;
