@@ -227,6 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   main_color: {r: 1, g: 1, b: 0, a: 1}
   color_multiplier: .5
+  illumination_rate: 1
 --- !u!1001 &694104544
 Prefab:
   m_ObjectHideFlags: 0
@@ -625,6 +626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   main_color: {r: 1, g: 1, b: 0, a: 1}
   color_multiplier: .5
+  illumination_rate: .400000006
 --- !u!23 &1893666193
 Renderer:
   m_ObjectHideFlags: 0
@@ -712,7 +714,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1934963918}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1.5
@@ -724,7 +726,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1934963918}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 3.29999995

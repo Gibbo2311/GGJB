@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\AgentPlayer1.cs" />
      <Compile Include="Assets\Scripts\AgentPlayer2.cs" />
      <Compile Include="Assets\Scripts\ControlSelfIllumination.cs" />
+     <Compile Include="Assets\Scripts\DetectSpotlightCollision.cs" />
      <Compile Include="Assets\Testcode\Controller.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
