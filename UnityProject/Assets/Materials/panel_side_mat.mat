@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: panel_side_mat
-  m_Shader: {fileID: 10, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 12, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -47,8 +47,8 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .867647052, g: .459342569, b: .459342569, a: 1}
+        second: {r: 1, g: .948529422, b: .948529422, a: 1}
       data:
         first:
           name: _SpecColor
-        second: {r: .5, g: .5, b: .5, a: 1}
+        second: {r: .890196085, g: .0901960805, b: .0901960805, a: 1}
