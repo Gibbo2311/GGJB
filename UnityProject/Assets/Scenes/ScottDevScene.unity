@@ -104,7 +104,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 649830fdbb0589949a7693801fec81e7, type: 2}
+  - {fileID: 2100000, guid: 2eca59a21facb1042a519853b4c4146c, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -243,7 +243,7 @@ GameObject:
   - 23: {fileID: 576897178}
   - 114: {fileID: 576897182}
   - 54: {fileID: 576897183}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallCube
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ Rigidbody:
   m_Mass: 111111
   m_Drag: 0
   m_AngularDrag: .0500000007
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -389,7 +389,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 902024008}
   - 108: {fileID: 902024009}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -598,7 +598,7 @@ GameObject:
   - 135: {fileID: 1180140914}
   - 114: {fileID: 1180140915}
   - 54: {fileID: 1180140916}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SpotlightCollision2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -800,9 +800,9 @@ GameObject:
   - 143: {fileID: 1554708887}
   - 114: {fileID: 1554708886}
   - 114: {fileID: 1554708888}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Player2
-  m_TagString: Untagged
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -915,6 +915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _noLightWhileMoventment: 0
   _reversedControls: 0
+  _switchedControls: 0
 --- !u!4 &1617685831
 Transform:
   m_ObjectHideFlags: 0
@@ -990,7 +991,7 @@ GameObject:
   - 135: {fileID: 1934963920}
   - 114: {fileID: 1934963922}
   - 54: {fileID: 1934963921}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SpotlightCollision
   m_TagString: SpotlightCollision
   m_Icon: {fileID: 0}
@@ -1060,7 +1061,7 @@ GameObject:
   - 23: {fileID: 2057071421}
   - 114: {fileID: 2057071420}
   - 54: {fileID: 2057071419}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}

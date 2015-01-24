@@ -13,7 +13,7 @@ GameObject:
   - 23: {fileID: 2307774}
   - 114: {fileID: 11407774}
   - 54: {fileID: 5407774}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -97,7 +97,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e66c6ddc907cb64ca00e3ccf44bff90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  main_color: {r: 0, g: 0, b: 0, a: 0}
+  override_color: 0
   illumination_rate: .400000006
+  illumination_decrease_rate: .600000024
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

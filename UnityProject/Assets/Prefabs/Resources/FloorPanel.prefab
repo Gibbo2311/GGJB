@@ -83,7 +83,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   main_color: {r: 0, g: 1, b: .131034613, a: 0}
   override_color: 0
-  illumination_rate: .699999988
+  illumination_rate: .899999976
+  illumination_decrease_rate: .300000012
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
