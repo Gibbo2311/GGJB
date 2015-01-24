@@ -3,7 +3,9 @@ using System.Collections;
 
 public class ControlSelfIllumination : MonoBehaviour {
 
-	public Color self_color = new Color(0.3f, 1, 0.5f);
+	public Color main_color = new Color(1f, 1f, 0f);
+
+	public Color current_color = main_color;
 
 	// Use this for initialization
 	void Start () {
@@ -12,6 +14,14 @@ public class ControlSelfIllumination : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		this.gameObject.renderer.material.color = this.self_color;
+		this.gameObject.renderer.material.color = this.current_color;
+	}
+
+	void OnCollisionEnter (Collision col)
+	{
+		if(col.gameObject.name == "SpotlightCollision")
+		{
+
+		}
 	}
 }
