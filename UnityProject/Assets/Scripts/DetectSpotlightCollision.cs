@@ -34,23 +34,23 @@ public class DetectSpotlightCollision : MonoBehaviour {
 			//var layerMask = 1 << 2;
 			RaycastHit hit;
 			Vector3 raytraceStart = flashlightObject.transform.position;
-			raytraceStart.y += 0.3f;
+			raytraceStart.y += 0.2f;
 			Vector3 direction = other.gameObject.transform.position - raytraceStart; 
-			if (Physics.Raycast (raytraceStart, direction, out hit))
+			direction.y += 0.1f;
+			direction.Normalize();
+			if(Physics.Raycast (raytraceStart, direction, out hit,  20f))
 			{
 				Vector3 v3Pos = hit.transform.position;
-				//ray.
 				if(hit.collider == other)
 				{
 					otherObject.OnLight();
-					Debug.DrawLine(raytraceStart, v3Pos);
 				}
-
-
 			}
-
-
-			
+		}
+		else if(other.gameObject.CompareTag("WallCube"))
+		{
+			ControlSelfIllumination otherObject = (ControlSelfIllumination) other.gameObject.GetComponent(typeof(ControlSelfIllumination));
+			otherObject.OnLight();
 		}
 		
 	}
