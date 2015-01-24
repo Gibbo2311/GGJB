@@ -19,7 +19,7 @@ public class DetectSpotlightCollision : MonoBehaviour {
 		{
 			Debug.Log ("On Collision Enter " + other.gameObject.name);
 			ControlSelfIllumination otherObject = (ControlSelfIllumination) other.gameObject.GetComponent(typeof(ControlSelfIllumination));
-			otherObject.OnEnterLight();
+			otherObject.OnLight();
 		}
 
 	}
