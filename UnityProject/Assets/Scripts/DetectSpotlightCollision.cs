@@ -40,7 +40,6 @@ public class DetectSpotlightCollision : MonoBehaviour {
 			direction.Normalize();
 			if(Physics.Raycast (raytraceStart, direction, out hit,  20f))
 			{
-				Vector3 v3Pos = hit.transform.position;
 				if(hit.collider == other)
 				{
 					otherObject.OnLight();
