@@ -31,7 +31,13 @@ public class TwistStatus : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		TimeBasedTwist ();	
+	}
+
+	public bool twistJustHappened()
+	{
+		return _lastTwistsChange == 0;
 	}
 
 	void TimeBasedTwist ()
@@ -53,6 +59,7 @@ public class TwistStatus : MonoBehaviour {
 		if (_lastTwistsChange > _twistInterval) {
 			switchOnTwists ();
 			_lastTwistsChange = 0f;
+
 		}
 	}
 
