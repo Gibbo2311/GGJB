@@ -18,7 +18,7 @@ public class TwistStatus : MonoBehaviour {
 	}
 
 	public bool IsNoLightWhileMovement(){
-		return _noLightWhileMoventment;
+		return  _charMoving &&_noLightWhileMoventment;
 	}
 
 	public void SetNoLightWhileMovement(bool b){
@@ -33,9 +33,6 @@ public class TwistStatus : MonoBehaviour {
 		_reversedControls = b;
 	}
 
-	public bool IsCharMoving() {
-		return _charMoving;
-	}
 	public void SetCharMoving(bool b) {
 		_charMoving = b;
 	}
