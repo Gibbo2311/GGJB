@@ -4988,7 +4988,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 2
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_HDR: 0
@@ -17573,7 +17573,7 @@ Light:
   m_SpotAngle: 68.5
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 2
     m_Resolution: -1
     m_Strength: 1
     m_Bias: .0500000007
@@ -22149,6 +22149,14 @@ Prefab:
       propertyPath: _height
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 2051014, guid: e19423215595e4e46947270be3c24556, type: 2}
+      propertyPath: m_HDR
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2051014, guid: e19423215595e4e46947270be3c24556, type: 2}
+      propertyPath: m_RenderingPath
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e19423215595e4e46947270be3c24556, type: 2}
   m_RootGameObject: {fileID: 342184211}
@@ -26058,6 +26066,10 @@ Prefab:
     - target: {fileID: 114686, guid: d6e889edfb025704383f78c7c8d25e60, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 10863378, guid: d6e889edfb025704383f78c7c8d25e60, type: 2}
+      propertyPath: m_Shadows.m_Type
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6e889edfb025704383f78c7c8d25e60, type: 2}
