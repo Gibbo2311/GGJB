@@ -389,6 +389,7 @@ MonoBehaviour:
   main_color: {r: 0, g: 0, b: 0, a: 0}
   override_color: 0
   illumination_rate: 8
+  illumination_decrease_rate: .5
 --- !u!114 &11405718
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -403,6 +404,7 @@ MonoBehaviour:
   main_color: {r: 0, g: 0, b: 0, a: 0}
   override_color: 0
   illumination_rate: 8
+  illumination_decrease_rate: .5
 --- !u!114 &11405720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -417,6 +419,7 @@ MonoBehaviour:
   main_color: {r: 0, g: 0, b: 0, a: 0}
   override_color: 0
   illumination_rate: 8
+  illumination_decrease_rate: .5
 --- !u!114 &11405722
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -431,6 +434,7 @@ MonoBehaviour:
   main_color: {r: 0, g: 0, b: 0, a: 0}
   override_color: 0
   illumination_rate: 8
+  illumination_decrease_rate: .5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
