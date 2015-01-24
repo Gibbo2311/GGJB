@@ -22,8 +22,6 @@ public class ControlSelfIllumination : MonoBehaviour {
 	}
 
 	public void OnLight() {
-	
-		Debug.Log("Trigger with light");
 		this.color_multiplier += illumination_rate * Time.deltaTime;
 	}
 }

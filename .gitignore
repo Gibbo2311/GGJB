@@ -12,6 +12,7 @@
 /*.userprefs
 /*.pidb
 /*.booproj
+*.orig*
 
 #Unity3D Generated File On Crash Reports
 sysinfo.txt
@@ -24,3 +25,5 @@ Assembly-CSharp-vs.csproj
 Assembly-CSharp.csproj
 UnityProject/Assembly-UnityScript-vs.unityproj
 UnityProject/Assembly-UnityScript.unityproj
+
+
