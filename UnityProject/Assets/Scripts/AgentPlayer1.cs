@@ -23,10 +23,30 @@ public class AgentPlayer1 : Agent {
 		return reverseFactor;
 	}
 
+	private string mapInput(string s){
+		if (getTwistStatus ().IsSwitchedControls ()) {
+			if ("h".Equals (s)) {
+					return "Player2Horizontal";
+			}
+			if ("v".Equals (s)) {
+					return "Player2Vertical";
+			}
+		} else {
+			if ("h".Equals (s)) {
+				return "Player1Horizontal";
+			}
+			if ("v".Equals (s)) {
+				return "Player1Vertical";
+			}
+		}
+		Debug.LogError ("Unknown Input ["+s+"]");
+		return "";
+	}
+
 	// Update is called once per frame
 	public override void Update () {
-		float h = Input.GetAxis ("Player1Horizontal");
-		float v = Input.GetAxis ("Player1Vertical");
+		float h = Input.GetAxis (mapInput("h"));
+		float v = Input.GetAxis (mapInput("v"));
 
 		sendCharMoving (h,v);
 

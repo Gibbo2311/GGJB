@@ -248,8 +248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adafc73543d29084794d5e36ce5f88a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x_size: 50
-  z_size: 50
 --- !u!4 &409345554
 Transform:
   m_ObjectHideFlags: 0
@@ -340,7 +338,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _noLightWhileMoventment: 0
   _reversedControls: 0
-  _switchedControls: 0
 --- !u!4 &604754670
 Transform:
   m_ObjectHideFlags: 0

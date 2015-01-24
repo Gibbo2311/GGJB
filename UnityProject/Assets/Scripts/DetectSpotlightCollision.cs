@@ -2,12 +2,17 @@
 using System.Collections;
 
 public class DetectSpotlightCollision : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
+	private GameObject twistStatusObject;
 	
+	// Use this for initialization
+	public void Start () {
+		twistStatusObject = GameObject.FindGameObjectWithTag ("TwistStatus");
 	}
 	
+	private TwistStatus getTwistStatus(){
+		return twistStatusObject.GetComponent<TwistStatus> ();
+	}
+
 	// Update is called once per frame
 	void Update () {
 	
@@ -15,6 +20,10 @@ public class DetectSpotlightCollision : MonoBehaviour {
 	
 	void OnTriggerStay(Collider other)
 	{
+		if (getTwistStatus ().IsNoLightWhileMovement ()) {
+			return;
+		}
+
 		if(other.gameObject.CompareTag("Box"))
 		{
 			ControlSelfIllumination otherObject = (ControlSelfIllumination) other.gameObject.GetComponent(typeof(ControlSelfIllumination));
