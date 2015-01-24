@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: floor_tile_mat
+  m_Name: robot2
   m_Shader: {fileID: 12, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
@@ -17,38 +17,31 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: efcd32b6e386f1b4086dc58f1b259177, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _BumpMap
-        second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _Illum
         second:
-          m_Texture: {fileID: 2800000, guid: efcd32b6e386f1b4086dc58f1b259177, type: 3}
+          m_Texture: {fileID: 2800000, guid: 40687f43414309c48b26cb7ad1bdca02, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
           name: _Shininess
-        second: .0207843836
+        second: .0324651636
       data:
         first:
           name: _EmissionLM
-        second: 1
+        second: 0
     m_Colors:
       data:
         first:
           name: _Color
-        second: {r: .272058845, g: .152032882, b: .199215516, a: 1}
+        second: {r: .193771616, g: .380527377, b: .823529422, a: 1}
       data:
         first:
           name: _SpecColor
-        second: {r: .210099474, g: .235214874, b: .492647052, a: 1}
+        second: {r: .5, g: .5, b: .5, a: 0}

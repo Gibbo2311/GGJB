@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: floor_tile_mat
+  m_Name: floor_tile_mat_2
   m_Shader: {fileID: 12, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
@@ -17,7 +17,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: efcd32b6e386f1b4086dc58f1b259177, type: 3}
+          m_Texture: {fileID: 2800000, guid: 5c78ae943c8eaac4d9778c980a859fa8, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -31,7 +31,7 @@ Material:
         first:
           name: _Illum
         second:
-          m_Texture: {fileID: 2800000, guid: efcd32b6e386f1b4086dc58f1b259177, type: 3}
+          m_Texture: {fileID: 2800000, guid: 5c78ae943c8eaac4d9778c980a859fa8, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -47,7 +47,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .272058845, g: .152032882, b: .199215516, a: 1}
+        second: {r: .389705896, g: .277951986, b: .277951986, a: 1}
       data:
         first:
           name: _SpecColor
