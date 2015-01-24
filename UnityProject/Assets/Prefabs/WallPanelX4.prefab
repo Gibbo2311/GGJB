@@ -28,7 +28,7 @@ GameObject:
   - 23: {fileID: 2305716}
   - 114: {fileID: 11405716}
   - 54: {fileID: 5405716}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ GameObject:
   - 23: {fileID: 2305718}
   - 114: {fileID: 11405718}
   - 54: {fileID: 5405718}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   - 23: {fileID: 2305720}
   - 114: {fileID: 11405720}
   - 54: {fileID: 5405720}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - 23: {fileID: 2305722}
   - 114: {fileID: 11405722}
   - 54: {fileID: 5405722}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}

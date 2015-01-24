@@ -131,7 +131,7 @@ GameObject:
   - 23: {fileID: 3026889}
   - 114: {fileID: 3026888}
   - 54: {fileID: 3026887}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -237,7 +237,7 @@ GameObject:
   - 23: {fileID: 8931588}
   - 114: {fileID: 8931587}
   - 54: {fileID: 8931586}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -374,7 +374,7 @@ GameObject:
   - 23: {fileID: 67138066}
   - 114: {fileID: 67138065}
   - 54: {fileID: 67138064}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -480,7 +480,7 @@ GameObject:
   - 23: {fileID: 76213080}
   - 114: {fileID: 76213079}
   - 54: {fileID: 76213078}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -630,7 +630,7 @@ GameObject:
   - 23: {fileID: 79611256}
   - 114: {fileID: 79611255}
   - 54: {fileID: 79611254}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -736,7 +736,7 @@ GameObject:
   - 23: {fileID: 81699575}
   - 114: {fileID: 81699574}
   - 54: {fileID: 81699573}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -917,7 +917,7 @@ GameObject:
   - 23: {fileID: 122298383}
   - 114: {fileID: 122298382}
   - 54: {fileID: 122298381}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -1023,7 +1023,7 @@ GameObject:
   - 23: {fileID: 125898082}
   - 114: {fileID: 125898081}
   - 54: {fileID: 125898080}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -1129,7 +1129,7 @@ GameObject:
   - 23: {fileID: 132818746}
   - 114: {fileID: 132818745}
   - 54: {fileID: 132818744}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -1235,7 +1235,7 @@ GameObject:
   - 23: {fileID: 152226872}
   - 114: {fileID: 152226871}
   - 54: {fileID: 152226870}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -1442,7 +1442,7 @@ GameObject:
   - 23: {fileID: 189242105}
   - 114: {fileID: 189242104}
   - 54: {fileID: 189242103}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -1548,7 +1548,7 @@ GameObject:
   - 23: {fileID: 200197280}
   - 114: {fileID: 200197279}
   - 54: {fileID: 200197278}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -1817,7 +1817,7 @@ GameObject:
   - 23: {fileID: 229055893}
   - 114: {fileID: 229055892}
   - 54: {fileID: 229055891}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -1923,7 +1923,7 @@ GameObject:
   - 23: {fileID: 230840124}
   - 114: {fileID: 230840123}
   - 54: {fileID: 230840122}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -2029,7 +2029,7 @@ GameObject:
   - 23: {fileID: 233938995}
   - 114: {fileID: 233938994}
   - 54: {fileID: 233938993}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -2192,7 +2192,7 @@ GameObject:
   - 23: {fileID: 286358250}
   - 114: {fileID: 286358249}
   - 54: {fileID: 286358248}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -2364,6 +2364,10 @@ Prefab:
       propertyPath: m_StepOffset
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 198570, guid: f561136e079f87b49898154c1ea3a905, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f561136e079f87b49898154c1ea3a905, type: 2}
   m_RootGameObject: {fileID: 725992826}
@@ -2426,7 +2430,7 @@ GameObject:
   - 23: {fileID: 312319637}
   - 114: {fileID: 312319636}
   - 54: {fileID: 312319635}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -2532,7 +2536,7 @@ GameObject:
   - 23: {fileID: 319888936}
   - 114: {fileID: 319888935}
   - 54: {fileID: 319888934}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -2638,7 +2642,7 @@ GameObject:
   - 23: {fileID: 323462414}
   - 114: {fileID: 323462413}
   - 54: {fileID: 323462412}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -2891,7 +2895,7 @@ GameObject:
   - 23: {fileID: 348141343}
   - 114: {fileID: 348141342}
   - 54: {fileID: 348141341}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -3069,7 +3073,7 @@ GameObject:
   - 23: {fileID: 435997432}
   - 114: {fileID: 435997431}
   - 54: {fileID: 435997430}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -3219,7 +3223,7 @@ GameObject:
   - 23: {fileID: 509357145}
   - 114: {fileID: 509357144}
   - 54: {fileID: 509357143}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -3369,7 +3373,7 @@ GameObject:
   - 23: {fileID: 521463925}
   - 114: {fileID: 521463924}
   - 54: {fileID: 521463923}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -3475,7 +3479,7 @@ GameObject:
   - 23: {fileID: 538108582}
   - 114: {fileID: 538108581}
   - 54: {fileID: 538108580}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -3581,7 +3585,7 @@ GameObject:
   - 23: {fileID: 556169462}
   - 114: {fileID: 556169461}
   - 54: {fileID: 556169460}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -3687,7 +3691,7 @@ GameObject:
   - 23: {fileID: 562595318}
   - 114: {fileID: 562595317}
   - 54: {fileID: 562595316}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -3867,7 +3871,7 @@ GameObject:
   - 23: {fileID: 618986406}
   - 114: {fileID: 618986405}
   - 54: {fileID: 618986404}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -4017,7 +4021,7 @@ GameObject:
   - 23: {fileID: 647216236}
   - 114: {fileID: 647216235}
   - 54: {fileID: 647216234}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -4123,7 +4127,7 @@ GameObject:
   - 23: {fileID: 674714765}
   - 114: {fileID: 674714764}
   - 54: {fileID: 674714763}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -4229,7 +4233,7 @@ GameObject:
   - 23: {fileID: 690584384}
   - 114: {fileID: 690584383}
   - 54: {fileID: 690584382}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -4366,7 +4370,7 @@ GameObject:
   - 23: {fileID: 709004838}
   - 114: {fileID: 709004837}
   - 54: {fileID: 709004836}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -4472,7 +4476,7 @@ GameObject:
   - 23: {fileID: 716818568}
   - 114: {fileID: 716818567}
   - 54: {fileID: 716818566}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -4579,7 +4583,7 @@ GameObject:
   - 114: {fileID: 725992827}
   - 198: {fileID: 725992833}
   - 199: {fileID: 725992832}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Player1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5796,7 +5800,7 @@ GameObject:
   - 23: {fileID: 731906111}
   - 114: {fileID: 731906110}
   - 54: {fileID: 731906109}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -5946,7 +5950,7 @@ GameObject:
   - 23: {fileID: 772824781}
   - 114: {fileID: 772824780}
   - 54: {fileID: 772824779}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -6052,7 +6056,7 @@ GameObject:
   - 23: {fileID: 773590188}
   - 114: {fileID: 773590187}
   - 54: {fileID: 773590186}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -6156,7 +6160,7 @@ GameObject:
   - 135: {fileID: 780989471}
   - 114: {fileID: 780989470}
   - 54: {fileID: 780989469}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SpotlightCollision
   m_TagString: SpotlightCollision
   m_Icon: {fileID: 0}
@@ -6229,7 +6233,7 @@ GameObject:
   - 23: {fileID: 792614721}
   - 114: {fileID: 792614720}
   - 54: {fileID: 792614719}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -6335,7 +6339,7 @@ GameObject:
   - 23: {fileID: 833853939}
   - 114: {fileID: 833853938}
   - 54: {fileID: 833853937}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -6472,7 +6476,7 @@ GameObject:
   - 23: {fileID: 838117288}
   - 114: {fileID: 838117287}
   - 54: {fileID: 838117286}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -6578,7 +6582,7 @@ GameObject:
   - 23: {fileID: 845684177}
   - 114: {fileID: 845684176}
   - 54: {fileID: 845684175}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -6684,7 +6688,7 @@ GameObject:
   - 23: {fileID: 852390871}
   - 114: {fileID: 852390870}
   - 54: {fileID: 852390869}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -6819,7 +6823,7 @@ GameObject:
   - 23: {fileID: 869535953}
   - 114: {fileID: 869535952}
   - 54: {fileID: 869535951}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -6925,7 +6929,7 @@ GameObject:
   - 23: {fileID: 880072533}
   - 114: {fileID: 880072532}
   - 54: {fileID: 880072531}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -7031,7 +7035,7 @@ GameObject:
   - 23: {fileID: 884311194}
   - 114: {fileID: 884311193}
   - 54: {fileID: 884311192}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -7137,7 +7141,7 @@ GameObject:
   - 23: {fileID: 884872429}
   - 114: {fileID: 884872428}
   - 54: {fileID: 884872427}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -7287,7 +7291,7 @@ GameObject:
   - 23: {fileID: 948830891}
   - 114: {fileID: 948830890}
   - 54: {fileID: 948830889}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -7513,7 +7517,7 @@ GameObject:
   - 23: {fileID: 1038695363}
   - 114: {fileID: 1038695362}
   - 54: {fileID: 1038695361}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -7619,7 +7623,7 @@ GameObject:
   - 23: {fileID: 1044419814}
   - 114: {fileID: 1044419813}
   - 54: {fileID: 1044419812}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -7754,7 +7758,7 @@ GameObject:
   - 23: {fileID: 1065442241}
   - 114: {fileID: 1065442240}
   - 54: {fileID: 1065442239}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -7860,7 +7864,7 @@ GameObject:
   - 23: {fileID: 1083176401}
   - 114: {fileID: 1083176400}
   - 54: {fileID: 1083176399}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -7966,7 +7970,7 @@ GameObject:
   - 23: {fileID: 1113951404}
   - 114: {fileID: 1113951403}
   - 54: {fileID: 1113951402}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -8176,7 +8180,7 @@ GameObject:
   - 23: {fileID: 1136219061}
   - 114: {fileID: 1136219060}
   - 54: {fileID: 1136219059}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -8282,7 +8286,7 @@ GameObject:
   - 23: {fileID: 1137140275}
   - 114: {fileID: 1137140274}
   - 54: {fileID: 1137140273}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -8507,7 +8511,7 @@ GameObject:
   - 23: {fileID: 1190019086}
   - 114: {fileID: 1190019085}
   - 54: {fileID: 1190019084}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -8613,7 +8617,7 @@ GameObject:
   - 23: {fileID: 1191254169}
   - 114: {fileID: 1191254168}
   - 54: {fileID: 1191254167}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -8750,7 +8754,7 @@ GameObject:
   - 23: {fileID: 1204595984}
   - 114: {fileID: 1204595983}
   - 54: {fileID: 1204595982}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -8944,7 +8948,7 @@ GameObject:
   - 23: {fileID: 1235428330}
   - 114: {fileID: 1235428329}
   - 54: {fileID: 1235428328}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -9050,7 +9054,7 @@ GameObject:
   - 23: {fileID: 1245580938}
   - 114: {fileID: 1245580937}
   - 54: {fileID: 1245580936}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -9156,9 +9160,9 @@ GameObject:
   - 143: {fileID: 1251617786}
   - 114: {fileID: 1251617785}
   - 114: {fileID: 1251617784}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Player2
-  m_TagString: Untagged
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9259,7 +9263,7 @@ GameObject:
   - 23: {fileID: 1258520079}
   - 114: {fileID: 1258520078}
   - 54: {fileID: 1258520077}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -9365,7 +9369,7 @@ GameObject:
   - 23: {fileID: 1265848214}
   - 114: {fileID: 1265848213}
   - 54: {fileID: 1265848212}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -9471,7 +9475,7 @@ GameObject:
   - 23: {fileID: 1270135083}
   - 114: {fileID: 1270135082}
   - 54: {fileID: 1270135081}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -9577,7 +9581,7 @@ GameObject:
   - 23: {fileID: 1277371059}
   - 114: {fileID: 1277371058}
   - 54: {fileID: 1277371057}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -9727,7 +9731,7 @@ GameObject:
   - 23: {fileID: 1330214775}
   - 114: {fileID: 1330214774}
   - 54: {fileID: 1330214773}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -9830,7 +9834,7 @@ GameObject:
   - 4: {fileID: 1341217128}
   - 108: {fileID: 1341217130}
   - 114: {fileID: 1341217129}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10003,7 +10007,7 @@ GameObject:
   - 23: {fileID: 1411363348}
   - 114: {fileID: 1411363347}
   - 54: {fileID: 1411363346}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -10109,7 +10113,7 @@ GameObject:
   - 23: {fileID: 1417062234}
   - 114: {fileID: 1417062233}
   - 54: {fileID: 1417062232}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -10215,7 +10219,7 @@ GameObject:
   - 23: {fileID: 1421431451}
   - 114: {fileID: 1421431450}
   - 54: {fileID: 1421431449}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -10321,7 +10325,7 @@ GameObject:
   - 23: {fileID: 1425491362}
   - 114: {fileID: 1425491361}
   - 54: {fileID: 1425491360}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -10458,7 +10462,7 @@ GameObject:
   - 23: {fileID: 1445643432}
   - 114: {fileID: 1445643431}
   - 54: {fileID: 1445643430}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -10564,7 +10568,7 @@ GameObject:
   - 23: {fileID: 1452978239}
   - 114: {fileID: 1452978238}
   - 54: {fileID: 1452978237}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -10712,9 +10716,9 @@ GameObject:
   - 135: {fileID: 1455189460}
   - 114: {fileID: 1455189459}
   - 54: {fileID: 1455189458}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SpotlightCollision2
-  m_TagString: Untagged
+  m_TagString: SpotlightCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10889,7 +10893,7 @@ GameObject:
   - 23: {fileID: 1500666325}
   - 114: {fileID: 1500666324}
   - 54: {fileID: 1500666323}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -11026,7 +11030,7 @@ GameObject:
   - 23: {fileID: 1552871328}
   - 114: {fileID: 1552871327}
   - 54: {fileID: 1552871326}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -11132,7 +11136,7 @@ GameObject:
   - 23: {fileID: 1589700748}
   - 114: {fileID: 1589700747}
   - 54: {fileID: 1589700746}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -11238,7 +11242,7 @@ GameObject:
   - 23: {fileID: 1597051733}
   - 114: {fileID: 1597051732}
   - 54: {fileID: 1597051731}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -11388,7 +11392,7 @@ GameObject:
   - 23: {fileID: 1642589997}
   - 114: {fileID: 1642589996}
   - 54: {fileID: 1642589995}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -11494,7 +11498,7 @@ GameObject:
   - 23: {fileID: 1648600053}
   - 114: {fileID: 1648600052}
   - 54: {fileID: 1648600051}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -11600,7 +11604,7 @@ GameObject:
   - 23: {fileID: 1658254324}
   - 114: {fileID: 1658254323}
   - 54: {fileID: 1658254322}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -11706,7 +11710,7 @@ GameObject:
   - 23: {fileID: 1680798803}
   - 114: {fileID: 1680798802}
   - 54: {fileID: 1680798801}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -12100,7 +12104,7 @@ GameObject:
   - 23: {fileID: 1865769949}
   - 114: {fileID: 1865769948}
   - 54: {fileID: 1865769947}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -12206,7 +12210,7 @@ GameObject:
   - 23: {fileID: 1876857446}
   - 114: {fileID: 1876857445}
   - 54: {fileID: 1876857444}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -12312,7 +12316,7 @@ GameObject:
   - 23: {fileID: 1877861308}
   - 114: {fileID: 1877861307}
   - 54: {fileID: 1877861306}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -12418,7 +12422,7 @@ GameObject:
   - 23: {fileID: 1878874229}
   - 114: {fileID: 1878874228}
   - 54: {fileID: 1878874227}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -12524,7 +12528,7 @@ GameObject:
   - 23: {fileID: 1899017459}
   - 114: {fileID: 1899017458}
   - 54: {fileID: 1899017457}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -12630,7 +12634,7 @@ GameObject:
   - 23: {fileID: 1930090402}
   - 114: {fileID: 1930090401}
   - 54: {fileID: 1930090400}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -12736,7 +12740,7 @@ GameObject:
   - 23: {fileID: 1949231313}
   - 114: {fileID: 1949231312}
   - 54: {fileID: 1949231311}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -12842,7 +12846,7 @@ GameObject:
   - 23: {fileID: 1955227922}
   - 114: {fileID: 1955227921}
   - 54: {fileID: 1955227920}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -12948,7 +12952,7 @@ GameObject:
   - 23: {fileID: 1995466025}
   - 114: {fileID: 1995466024}
   - 54: {fileID: 1995466023}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -13098,7 +13102,7 @@ GameObject:
   - 23: {fileID: 2020531297}
   - 114: {fileID: 2020531296}
   - 54: {fileID: 2020531295}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -13248,7 +13252,7 @@ GameObject:
   - 23: {fileID: 2051485879}
   - 114: {fileID: 2051485878}
   - 54: {fileID: 2051485877}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -13354,7 +13358,7 @@ GameObject:
   - 23: {fileID: 2064284688}
   - 114: {fileID: 2064284687}
   - 54: {fileID: 2064284686}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -13460,7 +13464,7 @@ GameObject:
   - 23: {fileID: 2071949110}
   - 114: {fileID: 2071949109}
   - 54: {fileID: 2071949108}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -13621,7 +13625,7 @@ GameObject:
   - 23: {fileID: 2086257144}
   - 114: {fileID: 2086257143}
   - 54: {fileID: 2086257142}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -13727,7 +13731,7 @@ GameObject:
   - 23: {fileID: 2087560167}
   - 114: {fileID: 2087560166}
   - 54: {fileID: 2087560165}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -13833,7 +13837,7 @@ GameObject:
   - 23: {fileID: 2094408211}
   - 114: {fileID: 2094408210}
   - 54: {fileID: 2094408209}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -13939,7 +13943,7 @@ GameObject:
   - 23: {fileID: 2095208242}
   - 114: {fileID: 2095208241}
   - 54: {fileID: 2095208240}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -14045,7 +14049,7 @@ GameObject:
   - 23: {fileID: 2096662334}
   - 114: {fileID: 2096662333}
   - 54: {fileID: 2096662332}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -14151,7 +14155,7 @@ GameObject:
   - 23: {fileID: 2105133681}
   - 114: {fileID: 2105133680}
   - 54: {fileID: 2105133679}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -14326,6 +14330,26 @@ Prefab:
       propertyPath: move_speed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114686, guid: d6e889edfb025704383f78c7c8d25e60, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 163380, guid: d6e889edfb025704383f78c7c8d25e60, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 163378, guid: d6e889edfb025704383f78c7c8d25e60, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114684, guid: d6e889edfb025704383f78c7c8d25e60, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114684, guid: d6e889edfb025704383f78c7c8d25e60, type: 2}
+      propertyPath: m_TagString
+      value: SpotlightCollision
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6e889edfb025704383f78c7c8d25e60, type: 2}
   m_RootGameObject: {fileID: 1251617782}
@@ -14344,7 +14368,7 @@ GameObject:
   - 23: {fileID: 2135092996}
   - 114: {fileID: 2135092995}
   - 54: {fileID: 2135092994}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}

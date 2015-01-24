@@ -43,8 +43,9 @@ public class DetectSpotlightCollision : MonoBehaviour {
 				if(hit.collider == other)
 				{
 					otherObject.OnLight();
+					Debug.DrawLine(raytraceStart, v3Pos);
 				}
-				Debug.DrawLine(raytraceStart, v3Pos);
+
 
 			}
 

@@ -28,7 +28,7 @@ GameObject:
   - 23: {fileID: 2302236}
   - 114: {fileID: 11402236}
   - 54: {fileID: 5402236}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ GameObject:
   - 23: {fileID: 2302238}
   - 114: {fileID: 11402238}
   - 54: {fileID: 5402238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallPanel
   m_TagString: Box
   m_Icon: {fileID: 0}
