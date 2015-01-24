@@ -302,7 +302,7 @@ Prefab:
     - target: {fileID: 11463378, guid: d6e889edfb025704383f78c7c8d25e60, type: 2}
       propertyPath: toFollow
       value: 
-      objectReference: {fileID: 198570, guid: f561136e079f87b49898154c1ea3a905, type: 2}
+      objectReference: {fileID: 725992826}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6e889edfb025704383f78c7c8d25e60, type: 2}
   m_RootGameObject: {fileID: 1251617782}
@@ -606,7 +606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a9ab78c439bfdd4587b69f7265cf22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toFollow: {fileID: 198570, guid: f561136e079f87b49898154c1ea3a905, type: 2}
+  toFollow: {fileID: 725992826}
 --- !u!114 &1251617785
 MonoBehaviour:
   m_ObjectHideFlags: 0
