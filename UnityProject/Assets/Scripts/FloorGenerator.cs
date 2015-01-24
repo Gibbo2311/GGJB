@@ -3,12 +3,15 @@ using System.Collections;
 
 public class FloorGenerator : MonoBehaviour {
 
+	public int x_size = 50;
+
+	public int z_size = 50;
 	// Use this for initialization
 	void Start () {
 
-		for(int i = -50; i < 50; i++)
+		for(int i = -x_size; i < x_size; i++)
 		{
-			for( int k = -25; k < 25; k++)
+			for( int k = -z_size; k < z_size; k++)
 			{
 				GameObject go = (GameObject)Instantiate(Resources.Load("FloorPanel"));
 
