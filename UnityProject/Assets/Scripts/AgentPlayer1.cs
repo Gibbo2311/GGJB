@@ -45,6 +45,11 @@ public class AgentPlayer1 : Agent {
 
 	// Update is called once per frame
 	public override void Update () {
+		if (getTwistStatus ().IsButton1Needed ()) {
+			return;
+		}
+
+
 		float h = Input.GetAxis (mapInput("h"));
 		float v = Input.GetAxis (mapInput("v"));
 

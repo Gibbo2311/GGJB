@@ -15,7 +15,7 @@ public class SpotlightController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (getTwistStatus ().IsNoLightWhileMovement ()) {
+		if (getTwistStatus ().IsNoLightWhileMovement () || getTwistStatus().IsButton2Needed()) {
 			light.intensity = 0.0f;
 		} else {
 			light.intensity = 1.0f;

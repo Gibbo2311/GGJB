@@ -24,7 +24,7 @@ public class DetectSpotlightCollision : MonoBehaviour {
 	
 	void OnTriggerStay(Collider other)
 	{
-		if (getTwistStatus ().IsNoLightWhileMovement ()) {
+		if (getTwistStatus ().IsNoLightWhileMovement () || getTwistStatus().IsButton2Needed()) {
 			return;
 		}
 

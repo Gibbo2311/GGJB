@@ -6,8 +6,10 @@ public class TwistStatus : MonoBehaviour {
 	private static int NO_LIGHTS_WHILE_MOVING = 0;
 	private static int REVERSED_CONTROLS = 1;
 	private static int SWITCHED_CONTROLS = 2;
+	private static int BUTTON_NEEDED = 3;
+	private static int BUTTON_NEEDED_SWITCHED = 4;
 
-	public bool[] _twists = new bool[3];
+	public bool[] _twists = new bool[5];
 
 	public int _maxParallelTwists = 3;
 	public int _actualParallelTwists = 0;
@@ -93,6 +95,42 @@ public class TwistStatus : MonoBehaviour {
 	
 	public void SetSwitchedControls(bool b){
 		_twists[SWITCHED_CONTROLS] = b;
+	}
+	
+	public bool IsButton1Needed(){
+		if(!_twists[BUTTON_NEEDED] && !_twists[BUTTON_NEEDED_SWITCHED]){
+			return false;
+		}
+
+		bool buttonPressed = false;
+
+		if (_twists [BUTTON_NEEDED_SWITCHED]) {
+			buttonPressed = Input.GetAxis ("Fire2") > 0.0f;
+		} else {
+			buttonPressed = Input.GetButton ("Fire1");
+		}
+
+		return !buttonPressed;
+	}
+
+	public bool IsButton2Needed(){
+		if(!_twists[BUTTON_NEEDED] && !_twists[BUTTON_NEEDED_SWITCHED]){
+			return false;
+		}
+
+		bool buttonPressed = false;
+
+		if (_twists [BUTTON_NEEDED_SWITCHED]) {
+			buttonPressed = Input.GetButton ("Fire1");
+		} else {
+			buttonPressed = Input.GetAxis ("Fire2") > 0.0f;
+		}
+
+		return !buttonPressed;
+	}
+
+	public void SetButtonNeeded(bool b){
+		_twists[BUTTON_NEEDED] = b;
 	}
 	
 	public void SetCharMoving(bool b) {
