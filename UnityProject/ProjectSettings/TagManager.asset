@@ -5,6 +5,7 @@ TagManager:
   tags:
   - SpotlightCollision
   - Box
+  - TwistStatus
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
