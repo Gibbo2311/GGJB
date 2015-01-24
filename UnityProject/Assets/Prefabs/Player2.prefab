@@ -92,7 +92,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.78999996}
+  m_LocalPosition: {x: 0, y: .0700000003, z: 2.53999996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 463378}
@@ -118,7 +118,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 163380}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.47000027, y: 2, z: -20.5100002}
+  m_LocalPosition: {x: -.300000012, y: 1.77999997, z: -3.63000011}
   m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children:
   - {fileID: 463378}
@@ -130,7 +130,7 @@ Renderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 163380}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b31fd72140fd24186fbb1aa9df9521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move_speed: 3
+  move_speed: 6
 --- !u!135 &13514684
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -295,7 +295,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.5
+  m_Radius: 1.75
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!143 &14363378
 CharacterController:

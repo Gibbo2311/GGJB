@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _toFollow: {fileID: 0}
-  _height: 5
+  _height: 17.5
 --- !u!124 &12451014
 Behaviour:
   m_ObjectHideFlags: 1
