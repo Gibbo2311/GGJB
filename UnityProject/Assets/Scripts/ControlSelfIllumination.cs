@@ -21,8 +21,8 @@ public class ControlSelfIllumination : MonoBehaviour {
 		this.gameObject.renderer.material.color = this.main_color * this.color_multiplier;
 	}
 
-	void OnEnterLight() {
-
+	public void OnEnterLight() {
+	
 		Debug.Log("Trigger with light");
 		this.color_multiplier = 1;
 	}
