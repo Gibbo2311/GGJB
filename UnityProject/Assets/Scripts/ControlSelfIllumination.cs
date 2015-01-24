@@ -5,7 +5,7 @@ public class ControlSelfIllumination : MonoBehaviour {
 
 	public Color main_color = new Color(1f, 1f, 0f);
 
-	public Color current_color = main_color;
+	public float color_multiplier = 0.5f;
 
 	// Use this for initialization
 	void Start () {
@@ -14,14 +14,15 @@ public class ControlSelfIllumination : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		this.gameObject.renderer.material.color = this.current_color;
+
+		this.gameObject.renderer.material.color = this.main_color * color_multiplier;
 	}
 
 	void OnCollisionEnter (Collision col)
 	{
 		if(col.gameObject.name == "SpotlightCollision")
 		{
-
+			
 		}
 	}
 }
