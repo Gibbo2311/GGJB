@@ -35,7 +35,12 @@ public class ControlSelfIllumination : MonoBehaviour {
 
 		if(getTwistStatus().twistJustHappened())
 	    {
-			this.color_multiplier = 0.8f;
+			var flash_of_light = Random.Range(0.4F, 0.9F);
+
+			if(flash_of_light > color_multiplier)
+			{
+				this.color_multiplier = flash_of_light;
+			}
 		}
 	
 		this.color_multiplier -= Time.deltaTime * this.illumination_decrease_rate;
