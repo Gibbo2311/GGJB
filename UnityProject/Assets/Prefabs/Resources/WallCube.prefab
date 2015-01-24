@@ -15,7 +15,7 @@ GameObject:
   - 54: {fileID: 5482722}
   m_Layer: 8
   m_Name: WallCube
-  m_TagString: Box
+  m_TagString: WallCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
