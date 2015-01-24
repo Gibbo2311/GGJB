@@ -81,6 +81,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e66c6ddc907cb64ca00e3ccf44bff90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  main_color: {r: 0, g: 1, b: .131034613, a: 0}
+  override_color: 0
   illumination_rate: .400000006
 --- !u!1001 &100100000
 Prefab:
