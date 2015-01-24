@@ -21,7 +21,7 @@ public class TwistStatus : MonoBehaviour {
 	public float _startEscalationInterval = 15.0f;
 	private float _actualEscalationInterval = 15.0f;
 	public float _standardEscalationInterval = 45.0f;
-	private float _lastTwistsChange = 0.0f;
+	private float _lastTwistsChange = 0.01f;
 	private float _lastTwistsEscalation = 0.0f;
 
 	private bool _charMoving = false;
