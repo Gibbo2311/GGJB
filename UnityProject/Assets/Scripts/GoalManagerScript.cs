@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class GoalManagerScript : MonoBehaviour {
+	private bool inEndZone = false;	
 
 	public GoalScript[] goals;
 	// Use this for initialization
@@ -23,6 +24,18 @@ public class GoalManagerScript : MonoBehaviour {
 		if(this.particleSystem.isStopped)
 		{
 			this.particleSystem.Play();
+		}
+
+
+		if (inEndZone) {
+			Application.LoadLevel ("EndScene");
+		}
+	}
+
+	void OnTriggerStay(Collider collider){
+		inEndZone = false;
+		if (collider.CompareTag ("Player")) {
+			inEndZone = true;
 		}
 	}
 }

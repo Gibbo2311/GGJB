@@ -84,7 +84,7 @@ GameObject:
   - 4: {fileID: 1055465528}
   - 114: {fileID: 1055465527}
   m_Layer: 0
-  m_Name: StartScreen
+  m_Name: endScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b69536f8354c2c4d956a4b63f5f297a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aTexture: {fileID: 2800000, guid: 39db88a8463d54d4eacc54e5388855ca, type: 3}
+  aTexture: {fileID: 2800000, guid: 357503b1f0ef41e46ba5123abe3ebec5, type: 3}
 --- !u!4 &1055465528
 Transform:
   m_ObjectHideFlags: 0
