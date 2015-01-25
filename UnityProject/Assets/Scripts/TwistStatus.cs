@@ -220,7 +220,7 @@ public class TwistStatus : MonoBehaviour {
 		// Make a background box
 		//GUI.Box (new Rect (10, 10, 800, 600), "Active Twists: " + _msgActiveTwists);
 		if (_debugActive) {
-			GUI.Box(new Rect(0, 0, Screen.width, Screen.height), _actualParallelTwists + " Twists: "+ _msgActiveTwists);
+			GUI.Box(new Rect(0, 0, Screen.width, 20), _actualParallelTwists + " Twists: "+ _msgActiveTwists);
 			//GUI.Box(new Rect(0, 20, Screen.width, Screen.height), "_lastTwistsChange["+Mathf.Round(_lastTwistsChange)+"] _lastTwistsEscalation["+Mathf.Round(_lastTwistsEscalation)+"] _actualEscalationDecreasing[" + _actualEscalationDecreasing +"]" );
 		}
 	}
