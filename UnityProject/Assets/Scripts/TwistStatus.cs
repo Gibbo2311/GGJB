@@ -3,13 +3,37 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class TwistStatus : MonoBehaviour {
-	private static int NO_LIGHTS_WHILE_MOVING = 0;
-	private static int REVERSED_CONTROLS = 1;
-	private static int SWITCHED_CONTROLS = 2;
-	private static int BUTTON_NEEDED = 3;
-	private static int BUTTON_NEEDED_SWITCHED = 4;
-	private static int SEPARATED = 5;
-	private static int FALLING = 6;
+	private const int NO_LIGHTS_WHILE_MOVING = 0;
+	private const int REVERSED_CONTROLS = 1;
+	private const int SWITCHED_CONTROLS = 2;
+	private const int BUTTON_NEEDED = 3;
+	private const int BUTTON_NEEDED_SWITCHED = 4;
+	private const int SEPARATED = 5;
+	private const int FALLING = 6;
+
+	private string getTwistName (int twistIndex){
+		switch (twistIndex)
+		{
+		case NO_LIGHTS_WHILE_MOVING:
+			return "No Light While Moving";
+		case REVERSED_CONTROLS:
+			return "Reversed Directions";
+		case SWITCHED_CONTROLS:
+			return "Switched Movement / Flashlight";
+		case BUTTON_NEEDED:
+			return "Press Button to activate Move / Light";
+		case BUTTON_NEEDED_SWITCHED:
+			return "Press Button to activate Move / Light (Switched)";
+		case SEPARATED:
+			return "Player and Flashlight Separated";
+		case FALLING:
+			return "Falling into random direction";
+		default:
+			return "New Twist!?!";
+		}
+	}
+	
+
 
 	public bool[] _twists = new bool[7];
 
@@ -18,23 +42,28 @@ public class TwistStatus : MonoBehaviour {
 
 	public bool _timeBasedTwist = true;
 	public float _twistInterval = 15.0f;
+	private float _actualTwistInterval = 15.0f;
 	public float _startEscalationInterval = 15.0f;
 	private float _actualEscalationInterval = 15.0f;
 	public float _standardEscalationInterval = 45.0f;
 	private float _lastTwistsChange = 0.01f;
 	private float _lastTwistsEscalation = 0.0f;
+	private bool _actualEscalationDecreasing = false;
 
 	private bool _charMoving = false;
 
 	// Use this for initialization
 	void Start () {
 		_actualEscalationInterval = _startEscalationInterval;
+		_actualTwistInterval = _startEscalationInterval+0.1f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
 		TimeBasedTwist ();	
+		if (Input.GetKeyDown (KeyCode.F1)) {
+			_debugActive = !_debugActive;
+		}
 	}
 
 	public bool twistJustHappened()
@@ -51,14 +80,27 @@ public class TwistStatus : MonoBehaviour {
 		_lastTwistsEscalation = _lastTwistsEscalation + Time.deltaTime;
 		if (_lastTwistsEscalation > _actualEscalationInterval) {
 			_actualEscalationInterval = _standardEscalationInterval;
-			if(_actualParallelTwists < _maxParallelTwists) {
-				_actualParallelTwists++;
+
+			if(_actualEscalationDecreasing) {
+				if(_actualParallelTwists > 1) {
+					_actualParallelTwists--;
+				} else {
+					_actualEscalationDecreasing=false;
+				}
+			} else {
+				if(_actualParallelTwists < _maxParallelTwists) {
+					_actualParallelTwists++;
+				} else {
+					_actualEscalationDecreasing=true;
+				}
 			}
+
 			_lastTwistsEscalation=0f;
 		}
 
 		_lastTwistsChange = _lastTwistsChange + Time.deltaTime;
-		if (_lastTwistsChange > _twistInterval) {
+		if (_lastTwistsChange > _actualTwistInterval) {
+			_actualTwistInterval = _twistInterval;
 			switchOnTwists ();
 			_lastTwistsChange = 0f;
 
@@ -72,11 +114,19 @@ public class TwistStatus : MonoBehaviour {
 			_twists[i] = false;
 			candidates.Add(i);
 		}
+		_msgActiveTwists = "";
 
 		for (int i = 0; i < _actualParallelTwists; i++) {
 			int removeCandidateIndex = Random.Range(0,candidates.Count);
 			int twistIndex = candidates[removeCandidateIndex];
 			_twists[twistIndex] = true;
+
+			string separator = " | ";
+			if(i==0){
+				separator = "";
+			}
+			_msgActiveTwists = _msgActiveTwists + separator + getTwistName(twistIndex);
+
 			//Debug.Log("Turning on Twist ["+twistIndex+"]");
 			candidates.Remove(removeCandidateIndex);
 		}
@@ -162,7 +212,21 @@ public class TwistStatus : MonoBehaviour {
 		_twists[FALLING] = b;
 	}
 	
+	private bool _debugActive = false;
+	private string _msgActiveTwists = "";
+	
 
+	void OnGUI () {
+		// Make a background box
+		//GUI.Box (new Rect (10, 10, 800, 600), "Active Twists: " + _msgActiveTwists);
+		if (_debugActive) {
+			GUI.Box(new Rect(0, 0, Screen.width, Screen.height), _actualParallelTwists + " Twists: "+ _msgActiveTwists);
+		}
+	}
+	
+	private void setMsgActiveTwists(string msg){
+		_msgActiveTwists = msg;
+	}
 
 
 }
