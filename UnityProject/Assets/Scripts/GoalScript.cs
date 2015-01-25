@@ -7,7 +7,7 @@ public class GoalScript : MonoBehaviour {
 	public bool complete = false;
 	// Use this for initialization
 	void Start () {
-	
+		this.renderer.material.color = goal_color;
 	}
 	
 	// Update is called once per frame
