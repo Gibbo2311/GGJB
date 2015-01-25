@@ -9,6 +9,7 @@ TagManager:
   - Player2
   - WallCube
   - Goal
+  - ImpactReaction
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
