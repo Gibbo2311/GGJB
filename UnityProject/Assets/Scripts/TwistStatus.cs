@@ -42,6 +42,7 @@ public class TwistStatus : MonoBehaviour {
 
 	public bool _timeBasedTwist = true;
 	public float _twistInterval = 15.0f;
+	private float _actualTwistInterval = 15.0f;
 	public float _startEscalationInterval = 15.0f;
 	private float _actualEscalationInterval = 15.0f;
 	public float _standardEscalationInterval = 45.0f;
@@ -53,6 +54,7 @@ public class TwistStatus : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		_actualEscalationInterval = _startEscalationInterval;
+		_actualTwistInterval = _startEscalationInterval+0.1f;
 	}
 	
 	// Update is called once per frame
@@ -84,7 +86,8 @@ public class TwistStatus : MonoBehaviour {
 		}
 
 		_lastTwistsChange = _lastTwistsChange + Time.deltaTime;
-		if (_lastTwistsChange > _twistInterval) {
+		if (_lastTwistsChange > _actualTwistInterval) {
+			_actualTwistInterval = _twistInterval;
 			switchOnTwists ();
 			_lastTwistsChange = 0f;
 
