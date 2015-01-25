@@ -14,6 +14,16 @@ public class AgentPlayer1 : Agent {
 	public override void Start () {
 		base.Start ();
 		twistStatusObject = GameObject.FindGameObjectWithTag ("TwistStatus");
+
+		var temp = GameObject.FindGameObjectsWithTag("Box");
+
+		foreach (var item in temp)
+		{
+			if(item.rigidbody)
+			{
+				item.rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+			}
+		}
 	}
 
 	private TwistStatus getTwistStatus(){
