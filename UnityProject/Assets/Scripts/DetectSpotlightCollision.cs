@@ -46,7 +46,7 @@ public class DetectSpotlightCollision : MonoBehaviour {
 				}
 			}
 		}
-		else if(other.gameObject.CompareTag("WallCube"))
+		else if(other.gameObject.CompareTag("WallCube") || other.gameObject.CompareTag("Goal"))
 		{
 			ControlSelfIllumination otherObject = (ControlSelfIllumination) other.gameObject.GetComponent(typeof(ControlSelfIllumination));
 			otherObject.OnLight();
