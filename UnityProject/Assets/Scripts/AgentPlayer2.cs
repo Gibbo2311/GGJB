@@ -52,5 +52,16 @@ public class AgentPlayer2 : Agent {
 
 		this.transform.LookAt(this.transform.position + look);
 
+		if(getTwistStatus().IsSeparated())
+		{
+			this.move = new Vector3(GetReverseFactor () * Input.GetAxis (mapInput("h")),
+			                       0f,
+			                       GetReverseFactor () * Input.GetAxis (mapInput("v")));
+
+			base.Update();
+		}
+
+
+
 	}
 }
