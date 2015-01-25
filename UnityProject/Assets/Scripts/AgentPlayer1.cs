@@ -8,6 +8,8 @@ public class AgentPlayer1 : Agent {
 
 	public float fall_multiplier = 0.8f;
 
+	private Vector3 impact;
+
 	// Use this for initialization
 	public override void Start () {
 		base.Start ();
@@ -50,6 +52,17 @@ public class AgentPlayer1 : Agent {
 	// Update is called once per frame
 	public override void Update () {
 		this.move = Vector3.zero;
+
+		if(impact != Vector3.zero)
+		{
+			if (impact.magnitude > 0.2f){ // if momentum > 0.2...
+				this.move = (impact * Time.deltaTime) * -1.0f; // move character
+			}
+			// impact vanishes to zero over time
+			impact = Vector3.Lerp(impact, Vector3.zero, 5.0f*Time.deltaTime);
+			base.Update();
+			//return;
+		}
 
 		float h = Input.GetAxis (mapInput("h"));
 		float v = Input.GetAxis (mapInput("v"));
@@ -94,4 +107,9 @@ public class AgentPlayer1 : Agent {
 		getTwistStatus().SetCharMoving(moving);			
 	}
 
+	public void AddImpact(Vector3 force){
+		var dir = force.normalized;
+		//dir.y = 0.5f; // add some velocity upwards - it's cooler this way
+		impact += dir.normalized * force.magnitude / this.rigidbody.mass;
+	}
 }

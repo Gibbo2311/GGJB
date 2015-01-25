@@ -28,7 +28,7 @@ public class DetectSpotlightCollision : MonoBehaviour {
 			return;
 		}
 
-		if(other.gameObject.CompareTag("Box"))
+		if(other.gameObject.CompareTag("Box") || other.gameObject.CompareTag("ImpactReaction"))
 		{
 			ControlSelfIllumination otherObject = (ControlSelfIllumination) other.gameObject.GetComponent(typeof(ControlSelfIllumination));
 			//var layerMask = 1 << 2;
