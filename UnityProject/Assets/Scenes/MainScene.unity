@@ -12922,6 +12922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move_speed: 4
+  twistFallMovement: {x: 0, y: 0, z: 0}
 --- !u!143 &725992828
 CharacterController:
   m_ObjectHideFlags: 0
