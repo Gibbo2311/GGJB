@@ -48,6 +48,7 @@ public class TwistStatus : MonoBehaviour {
 	public float _standardEscalationInterval = 45.0f;
 	private float _lastTwistsChange = 0.01f;
 	private float _lastTwistsEscalation = 0.0f;
+	private bool _actualEscalationDecreasing = false;
 
 	private bool _charMoving = false;
 
@@ -79,9 +80,21 @@ public class TwistStatus : MonoBehaviour {
 		_lastTwistsEscalation = _lastTwistsEscalation + Time.deltaTime;
 		if (_lastTwistsEscalation > _actualEscalationInterval) {
 			_actualEscalationInterval = _standardEscalationInterval;
-			if(_actualParallelTwists < _maxParallelTwists) {
-				_actualParallelTwists++;
+
+			if(_actualEscalationDecreasing) {
+				if(_actualParallelTwists > 1) {
+					_actualParallelTwists--;
+				} else {
+					_actualEscalationDecreasing=false;
+				}
+			} else {
+				if(_actualParallelTwists < _maxParallelTwists) {
+					_actualParallelTwists++;
+				} else {
+					_actualEscalationDecreasing=true;
+				}
 			}
+
 			_lastTwistsEscalation=0f;
 		}
 
@@ -207,7 +220,7 @@ public class TwistStatus : MonoBehaviour {
 		// Make a background box
 		//GUI.Box (new Rect (10, 10, 800, 600), "Active Twists: " + _msgActiveTwists);
 		if (_debugActive) {
-			GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "Twists: "+ _msgActiveTwists);
+			GUI.Box(new Rect(0, 0, Screen.width, Screen.height), _actualParallelTwists + " Twists: "+ _msgActiveTwists);
 		}
 	}
 	
