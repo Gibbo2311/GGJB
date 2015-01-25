@@ -4,7 +4,9 @@ using System.Collections;
 public class AgentPlayer1 : Agent {
 	private GameObject twistStatusObject;
 
-	public Vector3 twistFallMovement = Vector3.zero;
+	public Vector3 twist_fall_movement = Vector3.zero;
+
+	public float fall_multiplier = 0.8f;
 
 	// Use this for initialization
 	public override void Start () {
@@ -47,38 +49,37 @@ public class AgentPlayer1 : Agent {
 
 	// Update is called once per frame
 	public override void Update () {
-		if (getTwistStatus ().IsButton1Needed ()) {
-			return;
-		}
+		this.move = Vector3.zero;
 
 		float h = Input.GetAxis (mapInput("h"));
 		float v = Input.GetAxis (mapInput("v"));
 
 		sendCharMoving (h,v);
-
-		this.move = new Vector3(GetReverseFactor () * h,
-		                        0f, 
-		                        GetReverseFactor () *  v);
-		this.move.Normalize();
+		if (!getTwistStatus ().IsButton1Needed ()) {
+	
+			this.move = new Vector3(GetReverseFactor () * h,
+			                        0f, 
+			                        GetReverseFactor () *  v);
+		}
 
 		if(getTwistStatus().IsFalling())
 		{
-			if(this.twistFallMovement == Vector3.zero)
+			if(this.twist_fall_movement == Vector3.zero)
 			{
 				float x_fall = Random.Range (-1.0f, 1.0f);
 				float z_fall = Random.Range (-1.0f, 1.0f);
 				
-				this.twistFallMovement = new Vector3(x_fall, 0.0f, z_fall);
-				this.twistFallMovement.Normalize();
-				this.twistFallMovement *= (this.move_speed / 5.0f); 
+				this.twist_fall_movement = new Vector3(x_fall, 0.0f, z_fall);
+				this.twist_fall_movement.Normalize();
+				this.twist_fall_movement *= this.fall_multiplier; 
 			}
 		}
 		else
 		{
-			this.twistFallMovement = Vector3.zero;
+			this.twist_fall_movement = Vector3.zero;
 		}
 
-		this.move += this.twistFallMovement;
+		this.move += this.twist_fall_movement;
 
 		this.transform.LookAt(this.transform.position + move);
 		base.Update();
