@@ -22032,7 +22032,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11488432, guid: a366df880c376284983d840db4c32f75, type: 2}
       propertyPath: _timeBasedTwist
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a366df880c376284983d840db4c32f75, type: 2}
@@ -37097,7 +37097,7 @@ MonoBehaviour:
   _twists: 00000000000000
   _maxParallelTwists: 3
   _actualParallelTwists: 0
-  _timeBasedTwist: 0
+  _timeBasedTwist: 1
   _twistInterval: 15
   _startEscalationInterval: 25
   _standardEscalationInterval: 45
