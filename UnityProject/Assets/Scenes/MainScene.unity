@@ -22014,6 +22014,10 @@ Prefab:
       propertyPath: _startEscalationInterval
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 11488432, guid: a366df880c376284983d840db4c32f75, type: 2}
+      propertyPath: _timeBasedTwist
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a366df880c376284983d840db4c32f75, type: 2}
   m_RootGameObject: {fileID: 604754668}
@@ -37061,7 +37065,7 @@ MonoBehaviour:
   _twists: 00000000000000
   _maxParallelTwists: 3
   _actualParallelTwists: 0
-  _timeBasedTwist: 1
+  _timeBasedTwist: 0
   _twistInterval: 15
   _startEscalationInterval: 25
   _standardEscalationInterval: 45
@@ -69764,6 +69768,7 @@ GameObject:
   - 114: {fileID: 1125802642}
   - 199: {fileID: 1125802641}
   - 198: {fileID: 1125802640}
+  - 65: {fileID: 1125802643}
   m_Layer: 2
   m_Name: GoalManager
   m_TagString: Untagged
@@ -70880,6 +70885,18 @@ MonoBehaviour:
   - {fileID: 285618374}
   - {fileID: 1113188008}
   - {fileID: 1274405684}
+--- !u!65 &1125802643
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1125802638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.88999999, y: .0199999996, z: .899999976}
+  m_Center: {x: 0, y: 0, z: .49000001}
 --- !u!1 &1126410926
 GameObject:
   m_ObjectHideFlags: 0
