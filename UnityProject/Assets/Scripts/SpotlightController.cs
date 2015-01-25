@@ -45,11 +45,13 @@ public class SpotlightController : MonoBehaviour {
 
 			if(input_h > 0.3 || input_h < -0.3 || input_v > 0.3 || input_v < -0.3)
 			{
+				first_movement_detected = true;
 				foreach(Transform child in this.transform)
 				{
 					child.gameObject.SetActive(true);
 				}
 			}
+
 		}
 
 		if (getTwistStatus ().IsNoLightWhileMovement () || getTwistStatus().IsButton2Needed() || !first_movement_detected) {
