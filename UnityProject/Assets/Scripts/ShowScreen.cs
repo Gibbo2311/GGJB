@@ -10,7 +10,7 @@ public class ShowScreen : MonoBehaviour {
 			Debug.LogError("Assign a Texture in the inspector.");
 			return;
 		}
-		GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), aTexture, ScaleMode.StretchToFill, false, 10.0F);
+		GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), aTexture, ScaleMode.ScaleToFit, false, 1.0F);
 	}
 
 	// Use this for initialization
@@ -20,7 +20,7 @@ public class ShowScreen : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.Space) || Input.GetButtonDown("Fire1")) {
+		if (Input.GetKeyDown (KeyCode.Space) || Input.GetButtonDown("Fire2")) {
 			Application.LoadLevel("MainScene");										
 		}
 	}
