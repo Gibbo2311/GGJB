@@ -3,6 +3,7 @@ using System.Collections;
 
 public class ShowScreen : MonoBehaviour {
 
+<<<<<<< HEAD
 
 	public Texture aTexture;
 	void OnGUI() {
@@ -13,6 +14,8 @@ public class ShowScreen : MonoBehaviour {
 		GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), aTexture, ScaleMode.ScaleToFit, false, 1.0F);
 	}
 
+=======
+>>>>>>> origin/master
 	// Use this for initialization
 	void Start () {
 	
