@@ -9,7 +9,7 @@ public class AgentPlayer1 : Agent {
 	public float fall_multiplier = 0.8f;
 
 	private Vector3 impact;
-
+	
 	// Use this for initialization
 	public override void Start () {
 		base.Start ();
@@ -78,12 +78,9 @@ public class AgentPlayer1 : Agent {
 		float v = Input.GetAxis (mapInput("v"));
 
 		sendCharMoving (h,v);
-		if (!getTwistStatus ().IsButton1Needed ()) {
-	
-			this.move = new Vector3(GetReverseFactor () * h,
-			                        0f, 
-			                        GetReverseFactor () *  v);
-		}
+		this.move = new Vector3(GetReverseFactor () * h,
+		                       0f, 
+		                       GetReverseFactor () *  v);
 
 		if(getTwistStatus().IsFalling())
 		{
@@ -91,7 +88,7 @@ public class AgentPlayer1 : Agent {
 			{
 				float x_fall = Random.Range (-1.0f, 1.0f);
 				float z_fall = Random.Range (-1.0f, 1.0f);
-				
+
 				this.twist_fall_movement = new Vector3(x_fall, 0.0f, z_fall);
 				this.twist_fall_movement.Normalize();
 				this.twist_fall_movement *= this.fall_multiplier; 

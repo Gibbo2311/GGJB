@@ -6,10 +6,8 @@ public class TwistStatus : MonoBehaviour {
 	private const int NO_LIGHTS_WHILE_MOVING = 0;
 	private const int REVERSED_CONTROLS = 1;
 	private const int SWITCHED_CONTROLS = 2;
-	private const int BUTTON_NEEDED = 3;
-	private const int BUTTON_NEEDED_SWITCHED = 4;
-	private const int SEPARATED = 5;
-	private const int FALLING = 6;
+	private const int SEPARATED = 3;
+	private const int FALLING = 4;
 
 	private string getTwistName (int twistIndex){
 		switch (twistIndex)
@@ -20,10 +18,6 @@ public class TwistStatus : MonoBehaviour {
 			return "Reversed Directions";
 		case SWITCHED_CONTROLS:
 			return "Switched Movement / Flashlight";
-		case BUTTON_NEEDED:
-			return "Press Button to activate Move / Light";
-		case BUTTON_NEEDED_SWITCHED:
-			return "Press Button to activate Move / Light (Switched)";
 		case SEPARATED:
 			return "Player and Flashlight Separated";
 		case FALLING:
@@ -35,7 +29,7 @@ public class TwistStatus : MonoBehaviour {
 	
 
 
-	public bool[] _twists = new bool[7];
+	public bool[] _twists = new bool[5];
 
 	public int _maxParallelTwists = 3;
 	public int _actualParallelTwists = 0;
@@ -155,43 +149,7 @@ public class TwistStatus : MonoBehaviour {
 	public void SetSwitchedControls(bool b){
 		_twists[SWITCHED_CONTROLS] = b;
 	}
-	
-	public bool IsButton1Needed(){
-		if(!_twists[BUTTON_NEEDED] && !_twists[BUTTON_NEEDED_SWITCHED]){
-			return false;
-		}
 
-		bool buttonPressed = false;
-
-		if (_twists [BUTTON_NEEDED_SWITCHED]) {
-			buttonPressed = Input.GetAxis ("Fire2") > 0.0f;
-		} else {
-			buttonPressed = Input.GetButton ("Fire1");
-		}
-
-		return !buttonPressed;
-	}
-
-	public bool IsButton2Needed(){
-		if(!_twists[BUTTON_NEEDED] && !_twists[BUTTON_NEEDED_SWITCHED]){
-			return false;
-		}
-
-		bool buttonPressed = false;
-
-		if (_twists [BUTTON_NEEDED_SWITCHED]) {
-			buttonPressed = Input.GetButton ("Fire1");
-		} else {
-			buttonPressed = Input.GetAxis ("Fire2") > 0.0f;
-		}
-
-		return !buttonPressed;
-	}
-
-	public void SetButtonNeeded(bool b){
-		_twists[BUTTON_NEEDED] = b;
-	}
-	
 	public void SetCharMoving(bool b) {
 		_charMoving = b;
 	}

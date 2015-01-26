@@ -54,7 +54,7 @@ public class SpotlightController : MonoBehaviour {
 
 		}
 
-		if (getTwistStatus ().IsNoLightWhileMovement () || getTwistStatus().IsButton2Needed() || !first_movement_detected) {
+		if (getTwistStatus ().IsNoLightWhileMovement () ||  !first_movement_detected) {
 			light.intensity = 0.0f;
 		} else {
 			light.intensity = 1.0f;
